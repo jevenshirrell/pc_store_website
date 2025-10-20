@@ -1,0 +1,22 @@
+/* Fonts */
+@font-face {
+    font-family: Title;
+    src: url(./fonts/Fast\ Hand.otf);
+}
+@font-face {
+    font-family: Header;
+    src: url(./fonts/Blanka-Regular.otf);
+}
+@font-face {
+    font-family: Text;
+    src: url(./fonts/Geo-Regular.ttf);
+}
+/* Color Palette */
+:root{
+    --bg: #0D0126;
+    --panel: #2A0859;
+    --card: #662B8C;
+    --accent: #C596D9;
+    --accent-2: #FFE45E;
+    --text: #FFF2CD;
+}
