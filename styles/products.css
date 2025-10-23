@@ -1,1 +1,24 @@
 @import url(./global.css);
+
+.products.panel {
+    display: grid;
+    gap: 3vh;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.products .card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    margin: 0 auto;
+
+}
+
+.products .card h3, h4, p {
+    text-align: center;
+    
+}
