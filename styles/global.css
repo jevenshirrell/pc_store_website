@@ -33,6 +33,9 @@ body{
     max-height: 100%;
     margin: 0;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .panel{
     background-color: var(--panel);
@@ -150,11 +153,33 @@ details[open] .hamburger::before{
     transform: rotate(45deg);
     top: 0;
 }
+/* Footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footerLinks{
+    display: flex;
+    gap: 10px;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
 /* Media Queries */
 /* Tablet */
 @media (min-width: 480px) {
+    /* Basic styles */
     .mobileOnly{display: none;}
     .desktopOnly{display: block;}
+    /* Navbar */
     nav{
         justify-content: space-evenly;
     }
@@ -175,16 +200,31 @@ details[open] .hamburger::before{
         order: 5;
     }
 }
+/* Desktop */
 @media(min-width:768px){
     .logo{
         height: 75px;
     }
+    /* Footer */
+    .socials{
+        width: fit-content;
+    }
+    .socialLink > .logo{
+        height: 50px;
+    }
+    .footerLinks{
+        gap: 15px;
+    }
 }
+/* Widescreen */
 @media(min-width:1200px){
     .logo{
         height: 90px;
     }
     .navLink{
         font-size: xx-large;
+    }
+    .footerLinks, .socials{
+        gap: 25px;
     }
 }
