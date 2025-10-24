@@ -10,7 +10,33 @@ p{
 *{
     margin: 0;
 }
-
+/* Hero  */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    height: 20rem;
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+.hero h1{
+    text-align: center;
+    font-family: Title;
+    color: var(--panel);
+    background-color: var(--accent);
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+}
+/* Text block */
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Reviews */
 .container{
     display: flex;
@@ -29,3 +55,12 @@ p{
     width: 100%;
     object-fit: cover;
 }
+.stars{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.stars img{
+    width: 50px;
+}
+
