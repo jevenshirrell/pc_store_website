@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="panel">
+            <a href="./index.html"><img class="logo" src="./images/jnj_logo.png" alt="JNJ PCs Logo"></a>
+            <details class="mobileOnly">
+                <summary><span class="hamburger"></span></summary>
+                <ul class="menu card">
+                    <li><a href="./about.html" class="navLink">About</a></li>
+                    <li><a href="./products.html" class="navLink">Products</a></li>
+                    <li><a href="./contact.html" class="navLink">Contact</a></li>
+                    <li><a href="./faq.html" class="navLink">FAQs</a></li>
+                </ul>
+            </details>
+            <a href="./about.html" class="desktopOnly navLink" id="nav1">About</a>
+            <a href="./products.html" class="desktopOnly navLink" id="nav2">Products</a>
+            <a href="./contact.html" class="desktopOnly navLink" id="nav3">Contact</a>
+            <a href="faq.html" class="desktopOnly navLink" id="nav4">FAQs</a>
+        </nav>
+    </header>
+    <!-- "Hero" section with image in the back -->
+    <div class="hero">
+        <div class="panel">
+            <div class="text">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="image">
+                <!-- Needs an image -->
+            </div>
+        </div>
+    </div>
+    <!-- The user selects the purpose of the contact -->
+    <div class="purpose">
+        <div class="panel">
+            <div class="text">
+                <h3>What do you wish to contact us about?</h3>
+            </div>
+            <!-- These will change the website underneath for slightly different forms to fill out -->
+            <div class="choice">
+                <select name="reason" id="reason">
+                <option value="default"></option>
+                <option value="trouble-shoot">Trouble-shooting</option>
+                <option value="review">Review</option>
+                <option value="suggestions">Suggestion</option>
+                <option value="questions">Question</option>
+                <option value="refunds">Refund</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- REVIEW -->
+    <div class="review">
+        <div class="panel">
+            <div class="title">
+                <h2>Review</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Product:</p>
+                <select name="product" id="product">
+                <option value="default"></option>
+                <option value="">...</option>
+                <option value="">...</option>
+                <option value="">...</option>
+                </select>
+
+                <p>Your Review:</p>
+                <!-- Want to use a working star system for review -->
+            </div>
+        </div>
+    </div>
+    <!-- TROUBLE-SHOOT -->
+    <div class="trouble-shoot">
+        <div class="panel">
+            <div class="title">
+                <h2>Trouble-shooting</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>Product:</p>
+                <select name="product" id="product">
+                <option value="default"></option>
+                <option value="">...</option>
+                <option value="">...</option>
+                <option value="">...</option>
+                </select>
+
+                <p>Tell us what's wrong:</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <!-- QUESTIONS -->
+    <div class="questions">
+        <div class="panel">
+            <div class="title">
+                <h2>Questions</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>What would you like to know?</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <!-- SUGGESTIONS -->
+    <div class="suggestions">
+        <div class="panel">
+            <div class="title">
+                <h2>Suggestions</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>The suggestion relates to:</p>
+                <select name="sug" id="sug">
+                <option value="default"></option>
+                <option value="">...</option>
+                <option value="">...</option>
+                <option value="">...</option>
+                </select>
+
+                <p>Your Suggestion:</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <!-- OTHER -->
+    <div class="other">
+        <div class="panel">
+            <div class="title">
+                <h2>Other</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>What you would like to tell us:</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <!-- REFUNDS -->
+    <div class="refunds">
+        <div class="panel">
+            <div class="title">
+                <h2>Refunds</h2>
+            </div>
+            <div class="form">
+                <p>Email:</p>
+                <input type="email">
+
+                <p>PC Serial #:</p>
+                <input type="text">
+
+                <p>Reason:</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
