@@ -5,14 +5,36 @@
     gap: 3vh;
 }
 
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+h3, h4, p {
+    margin: 0;
+}
+
 h1 {
     text-align: center;
     text-decoration: underline;
+    font-family: Title;
+}
+
+h3 {
+    font-family: Header;
+    text-decoration: underline;
+}
+
+h4 {
+    font-family: Text;
+    font-size: 135%;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .products .card {
