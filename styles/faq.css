@@ -1,1 +1,59 @@
 @import url(./global.css);
+.header h1{
+    justify-self: center;
+    font-family: title;
+    text-decoration: underline;
+}
+.card{
+   margin: 1rem;
+}
+.quick{
+    padding: 1rem;
+}
+li{
+    margin: .6rem;
+    font-size: large;
+}
+img{
+    width: 100%;
+}
+@media(min-width:768px){
+    .header{
+        font-size: x-large;
+    }
+    a{
+        font-size: x-large;
+    }
+    .inside {
+        display: flex;
+    }
+    .image{
+        flex-grow: 1.5;
+        width: 125%;
+    }
+}
+@media(min-width:1000px){
+    .header{
+        font-size: xx-large;
+    }
+    a{
+        font-size: xx-large;
+    }
+    .title{
+        font-size: x-large;
+    }
+    .instruct{
+        font-size: large;
+    }
+}
+@media(min-width:1200px){
+    .title{
+        font-size: xx-large;
+    }
+    .instruct{
+        font-size: x-large;
+    }
+    .image{
+        flex-grow: 1;
+    }
+}
