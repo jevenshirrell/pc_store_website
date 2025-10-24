@@ -63,4 +63,16 @@ p{
 .stars img{
     width: 50px;
 }
-
+/* Products */
+.productCard{
+    flex: 0 0 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.productCard h2:nth-of-type(2){
+    font-family: Text;
+    font-size: xx-large;
+}
