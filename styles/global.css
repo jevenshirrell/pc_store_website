@@ -69,8 +69,7 @@ body{
 /* Navbar styles */
 header{
     position: sticky;
-    top: 10px
-    
+    top: 0;
 }
 nav{
     display: flex;

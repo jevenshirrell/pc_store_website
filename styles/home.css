@@ -69,10 +69,35 @@ p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 10px;
 }
 .productCard h2:nth-of-type(2){
     font-family: Text;
     font-size: xx-large;
+}
+/* Meida queries */
+/* Desktop */
+@media (min-width:768px){
+    p{
+        font-size: x-large;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+}
+/* Widescreen */
+@media (min-width:1200px){
+    p{
+        font-size: xx-large;
+    }
+    .hero h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
 }
