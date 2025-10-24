@@ -2,7 +2,10 @@
 .header h1{
     justify-self: center;
     font-family: title;
-    text-decoration: underline;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 .card{
    margin: 1rem;
@@ -42,7 +45,7 @@ img{
     .title{
         font-size: x-large;
     }
-    .instruct{
+    .instruct, li, ul{
         font-size: large;
     }
 }
@@ -50,7 +53,7 @@ img{
     .title{
         font-size: xx-large;
     }
-    .instruct{
+    .instruct, li, ul{
         font-size: x-large;
     }
     .image{
