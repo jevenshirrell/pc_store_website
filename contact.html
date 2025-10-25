@@ -44,20 +44,20 @@
             </div>
             <!-- These will change the website underneath for slightly different forms to fill out -->
             <div class="choice">
-                <select name="reason" id="reason">
+                <select name="reason" onchange="status(this)">
                 <option value="default"></option>
                 <option value="trouble-shoot">Trouble-shooting</option>
                 <option value="review">Review</option>
                 <option value="suggestions">Suggestion</option>
                 <option value="questions">Question</option>
-                <option value="refunds">Refund</option>
+                <option value="refunds">Refunds</option>
                 <option value="other">Other</option>
                 </select>
             </div>
         </div>
     </div>
     <!-- REVIEW -->
-    <div class="review">
+    <div class="review hidden" id="review">
         <div class="panel">
             <div class="title">
                 <h2>Review</h2>
@@ -80,7 +80,7 @@
         </div>
     </div>
     <!-- TROUBLE-SHOOT -->
-    <div class="trouble-shoot">
+    <div class="trouble-shoot hidden" id="trouble-shoot">
         <div class="panel">
             <div class="title">
                 <h2>Trouble-shooting</h2>
@@ -106,7 +106,7 @@
         </div>
     </div>
     <!-- QUESTIONS -->
-    <div class="questions">
+    <div class="questions hidden" id="questions">
         <div class="panel">
             <div class="title">
                 <h2>Questions</h2>
@@ -124,7 +124,7 @@
         </div>
     </div>
     <!-- SUGGESTIONS -->
-    <div class="suggestions">
+    <div class="suggestions hidden" id="suggestions">
         <div class="panel">
             <div class="title">
                 <h2>Suggestions</h2>
@@ -147,7 +147,7 @@
         </div>
     </div>
     <!-- OTHER -->
-    <div class="other">
+    <div class="other hidden" id="other">
         <div class="panel">
             <div class="title">
                 <h2>Other</h2>
@@ -165,7 +165,7 @@
         </div>
     </div>
     <!-- REFUNDS -->
-    <div class="refunds">
+    <div class="refunds hidden" id="refunds">
         <div class="panel">
             <div class="title">
                 <h2>Refunds</h2>
@@ -184,3 +184,57 @@
     </div>
 </body>
 </html>
+<script>
+    function status(select){
+        if (select.value=='default'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='review'){
+            document.getElementById('review').style.display = "block";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='trouble-shoot'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "block";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='questions'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "block";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='suggestions'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "block";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='other'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "block";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='refunds'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "block";
+        }
+    }
+</script>
