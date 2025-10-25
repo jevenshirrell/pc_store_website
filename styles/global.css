@@ -52,11 +52,24 @@ body{
     margin: 0;
 }
 .desktopOnly{ display: none;}
+.button1{
+    font-family: Text;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--panel);
+}
+.button1:hover{
+    background-color: var(--accent-2);
+    cursor: pointer;
+}
 /* Navbar styles */
 header{
     position: sticky;
-    top: 10px
-    
+    top: 0;
 }
 nav{
     display: flex;
