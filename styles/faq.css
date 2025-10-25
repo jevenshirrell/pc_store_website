@@ -1,4 +1,5 @@
 @import url(./global.css);
+/* For header text */
 .header h1{
     justify-self: center;
     font-family: title;
@@ -7,9 +8,11 @@ a{
     color: white;
     text-decoration: none;
 }
+/* To make it look nicer*/
 .card{
    margin: 1rem;
 }
+/* quick scroll section */
 .quick{
     padding: 1rem;
 }
@@ -17,9 +20,12 @@ li{
     margin: .6rem;
     font-size: large;
 }
+/* For Q and A images */
 img{
     width: 100%;
 }
+
+/* Just a lot of size tweaks for respective screens */
 @media(min-width:768px){
     .header{
         font-size: x-large;
