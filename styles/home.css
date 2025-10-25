@@ -1,1 +1,103 @@
 @import url(./global.css);
+/* General */
+h2{
+    font-family: Header;
+    text-align: center;
+}
+p{
+    font-size: large;
+}
+*{
+    margin: 0;
+}
+/* Hero  */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    height: 20rem;
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+.hero h1{
+    text-align: center;
+    font-family: Title;
+    color: var(--panel);
+    background-color: var(--accent);
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+}
+/* Text block */
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Reviews */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    overflow:auto;
+    gap: 10px;
+}
+.reviewCard{
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cardImg{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.stars{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.stars img{
+    width: 50px;
+}
+/* Products */
+.productCard{
+    flex: 0 0 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.productCard h2:nth-of-type(2){
+    font-family: Text;
+    font-size: xx-large;
+}
+/* Meida queries */
+/* Desktop */
+@media (min-width:768px){
+    p{
+        font-size: x-large;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+}
+/* Widescreen */
+@media (min-width:1200px){
+    p{
+        font-size: xx-large;
+    }
+    .hero h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+}
