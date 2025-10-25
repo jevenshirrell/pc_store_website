@@ -66,6 +66,20 @@ body{
     background-color: var(--accent-2);
     cursor: pointer;
 }
+.button2{
+    font-family: Text;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--panel);
+    color: var(--text);
+}
+.button2:hover{
+    background-color: var(--bg);
+    cursor: pointer;
+}
 /* Navbar styles */
 header{
     position: sticky;
