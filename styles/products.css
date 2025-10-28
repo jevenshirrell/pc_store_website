@@ -1,10 +1,12 @@
 @import url(./global.css);
 
+/* grid container ( products) */
 .products.panel {
     display: grid;
     gap: 10px;
 }
 
+/* product info */
 .productInfo {
     display: flex;
     flex-direction: column;
@@ -12,10 +14,12 @@
     gap: 10px;
 }
 
+/* removes the margin from headings and paragraphs */
 h2, h3, p {
     margin: 0;
 }
 
+/* text */
 h1 {
     text-align: center;
     font-family: Title;
@@ -26,92 +30,91 @@ h2 {
     font-family: Header;
     color: var(--accent-2);
 }
-
+ 
 h3 {
     font-family: Text;
     font-size: 1.5rem;
 }
 
-p{
+p {
     font-size: large;
 }
 
+/* images */
 img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 5px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
-.imgCard{
+/* image container */
+.imgCard {
     width: 100%;
 }
 
+/* product card style */
 .products .card {
     gap: 10px;
 }
 
-.card{
+/* card container */
+.card {
     display: flex;
     flex-direction: row;
     height: min-content;
 }
 
+/* centers the text in the headings and paragraphs */
 .products .card h2, h3, p {
     text-align: center;
-    
 }
 
-.button2{
+/* button style */
+.button2 {
     width: max-content;
 }
 
-
-@media (min-width:0px) {
-    
+/* small screens, stacks the cards vertically */
+@media (min-width: 0px) {
     .products.panel .card {
         flex-direction: column;
-        
     }
     .products.panel {
         grid-template-columns: repeat(1, 1fr);
     }
-    
     h1 {
         font-size: 300%;
     }
 }
 
-@media (min-width:480px) {
-    
+/* medium screens, makes a side by side layout */
+@media (min-width: 480px) {
     .products.panel .card {
         flex-direction: row;
         align-items: center;
     }
-
+    /* make image flexible */
     .imgCard {
         flex: 1 1 1500px;
     }
 }
 
-@media (min-width:1200px) {
+/* large screens, makes a grid with 2 columns and bigger fonts */
+@media (min-width: 1200px) {
     .products.panel {
         grid-template-columns: repeat(2, 1fr);
     }
-
     h1 {
         font-size: 400%;
     }
-
-    h2{
+    h2 {
         font-size: 1.75rem;
     }
-
-    h3{
+    h3 {
         font-size: xx-large;
     }
-
-    p{
+    p {
         font-size: large;
     }
 }
