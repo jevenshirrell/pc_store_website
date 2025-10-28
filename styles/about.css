@@ -1,1 +1,23 @@
 @import url(./global.css);
+
+h1 {
+    text-align: center;
+    font-family: Title;
+    color: var(--accent);
+}
+
+h2 {
+    font-family: Header;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 300%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+}
