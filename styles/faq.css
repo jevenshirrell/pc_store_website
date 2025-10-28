@@ -3,66 +3,98 @@
 .header h1{
     justify-self: center;
     font-family: title;
+    font-size: 3rem;
+    color: var(--accent);
 }
-a{
-    color: white;
-    text-decoration: none;
-}
-/* To make it look nicer*/
-.card{
-   margin: 1rem;
+ul{
+    margin: 0;
 }
 /* quick scroll section */
 .quick{
-    padding: 1rem;
+    padding: 10px;
+    justify-self: center;
+}
+.quick a{
+    color: var(--text);
 }
 li{
-    margin: .6rem;
+    padding: 5px;
     font-size: large;
 }
-/* For Q and A images */
-img{
+/* Main content */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title{
+    text-align: center;
     width: 100%;
+    color: var(--accent-2);
+}
+h1{
+    margin: 0;
+}
+p{
+    font-size: large;
+    margin: 0;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.instruct{
+    flex: 1 1 200px;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
 /* Just a lot of size tweaks for respective screens */
+/* Tablet */
 @media(min-width:768px){
-    .header{
+    .header h1{
+        font-size: 4rem;
+    }
+    a, p{
         font-size: x-large;
-    }
-    a{
-        font-size: x-large;
-    }
-    .inside {
-        display: flex;
-    }
-    .image{
-        flex-grow: 1.5;
-        width: 125%;
+    }   
+    .card img{
+        width: 0;
+        height: 300px;
+        flex: 1 1 200px;
     }
 }
-@media(min-width:1000px){
-    .header{
-        font-size: xx-large;
+/* Desktop */
+@media(min-width:900px){
+    .card{
+        gap: 10px;
     }
-    a{
-        font-size: xx-large;
+    .header h1{
+        font-size: 5rem;
     }
     .title{
-        font-size: x-large;
+        font-size: large;
     }
     .instruct, li, ul{
         font-size: large;
     }
 }
+/* Widescreen */
 @media(min-width:1200px){
     .title{
+        font-size: large;
+    }
+    a, p{
         font-size: xx-large;
     }
     .instruct, li, ul{
         font-size: x-large;
-    }
-    .image{
-        flex-grow: 1;
     }
 }
