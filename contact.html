@@ -31,9 +31,6 @@
             <div class="text">
                 <h1>Contact Us</h1>
             </div>
-            <div class="image">
-                <!-- Needs an image -->
-            </div>
         </div>
     </div>
     <!-- The user selects the purpose of the contact -->
@@ -69,13 +66,35 @@
                 <p>Product:</p>
                 <select name="product" id="product">
                 <option value="default"></option>
-                <option value="">...</option>
-                <option value="">...</option>
-                <option value="">...</option>
+                <option value="game">JNJ Stealth Gaming PC</option>
+                <option value="create">JNJ Creator Pro Workstation</option>
+                <option value="office">JNJ Compact Office PC</option>
+                <option value="custom">Custom Build</option>
+                <option value="other">Other</option>
                 </select>
 
                 <p>Your Review:</p>
-                <!-- Want to use a working star system for review -->
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 stars">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star">★</label>
+                </div>
+
+                <p>A brief description of your rating:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button>Submit</button>
             </div>
         </div>
     </div>
@@ -95,13 +114,17 @@
                 <p>Product:</p>
                 <select name="product" id="product">
                 <option value="default"></option>
-                <option value="">...</option>
-                <option value="">...</option>
-                <option value="">...</option>
+                <option value="game">JNJ Stealth Gaming PC</option>
+                <option value="create">JNJ Creator Pro Workstation</option>
+                <option value="office">JNJ Compact Office PC</option>
+                <option value="custom">Custom Build</option>
+                <option value="other">Other</option>
                 </select>
 
                 <p>Tell us what's wrong:</p>
-                <input type="text">
+                <textarea name="tall" id="tall"></textarea>
+                
+                <button>Submit</button>
             </div>
         </div>
     </div>
@@ -119,7 +142,9 @@
                 <input type="email">
 
                 <p>What would you like to know?</p>
-                <input type="text">
+                <textarea name="tall" id="tall"></textarea>
+
+                <button>Submit</button>
             </div>
         </div>
     </div>
@@ -136,13 +161,16 @@
                 <p>The suggestion relates to:</p>
                 <select name="sug" id="sug">
                 <option value="default"></option>
-                <option value="">...</option>
-                <option value="">...</option>
-                <option value="">...</option>
+                <option value="service">Service Offerings</option>
+                <option value="experience">Customer Experience / Website Features</option>
+                <option value="business">Business Suggestions</option>
+                <option value="marketing">Marketing & Branding Ideas</option>
                 </select>
 
                 <p>Your Suggestion:</p>
-                <input type="text">
+                <textarea name="tall" id="tall"></textarea>
+
+                <button>Submit</button>
             </div>
         </div>
     </div>
@@ -160,7 +188,9 @@
                 <input type="email">
 
                 <p>What you would like to tell us:</p>
-                <input type="text">
+                <textarea name="tall" id="tall"></textarea>
+
+                <button>Submit</button>
             </div>
         </div>
     </div>
@@ -178,7 +208,9 @@
                 <input type="text">
 
                 <p>Reason:</p>
-                <input type="text">
+                <textarea name="tall" id="tall"></textarea>
+
+                <button>Submit</button>
             </div>
         </div>
     </div>
