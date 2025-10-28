@@ -9,12 +9,72 @@
     display: none;
 }
 /* form sizing and styling */
+<<<<<<< Updated upstream
 select, input, textarea{
+=======
+select, input, textarea, option{
+>>>>>>> Stashed changes
     background-color: var(--accent);
     height: 2rem;
     width: 20rem;
     border-radius: .5rem;
     font-size: 1rem;
+<<<<<<< Updated upstream
+=======
+}
+/* "Hero" css */
+.hero .text{
+    background-image: url(https://www.inpulseglobal.com/wp-content/uploads/2022/10/PC-Support.jpg);
+    background-size: cover;
+    border-radius: 1rem;
+    height: 10rem;
+    color: var(--accent);
+    font-size: x-large;
+}
+/* Adjusting form sizing */
+textarea{
+    height: 8rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-left: .2rem;
+}
+button{
+    display: block;
+    height: 3rem;
+    width: 8rem;
+    font-size: larger;
+    font-family: header;
+    margin: 1rem;
+}
+/* Star System */
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+/* When clicked (radio selected) */
+.star-rating input:checked ~ label {
+  color: gold;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+>>>>>>> Stashed changes
 }
 /* "Hero" css */
 .hero .text{
@@ -58,13 +118,34 @@ p{
 }
 
 @media(min-width:768px){
+<<<<<<< Updated upstream
     .hero{
         font-size: xx-large;
+=======
+    select, input, textarea{
+        width: 30rem;
+    }
+    p, button{
+        font-size: 2.5rem;
+    }
+    h2, h3{
+        font-size: 3.5rem;
+    }
+    button{
+        width: 15rem;
+        height: 5rem;
+    }
+    select, input, textarea, option{
+        font-size: 1.5rem;
+    }
+    .review .panel, .trouble-shoot .panel, .questions .panel, .suggestions .panel, .other .panel, .refunds .panel{
+        padding-left: 2rem;
+>>>>>>> Stashed changes
     }
 }
 @media(min-width:1000px){
-    .hero{
-        font-size: xx-large;
+    h1{
+        font-size: 5rem;
     }
 }
 @media(min-width:1200px){
