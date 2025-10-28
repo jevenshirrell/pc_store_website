@@ -25,6 +25,10 @@
 }
 /* Default styles */
 *{box-sizing: border-box;}
+*:focus-visible{
+    outline: 3px solid white;
+    border-radius: 5px;
+}
 body{
     background: radial-gradient(circle at 50%, var(--panel), var(--bg));
     color: var(--text);
