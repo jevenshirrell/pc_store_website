@@ -12,9 +12,19 @@ h2 {
 }
 
 .hero {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&);
+    background-image: url(https://assemblecomputeronline.wordpress.com/wp-content/uploads/2018/09/best-computer-store.jpg?w=880&h=312&crop=1);
     background-position: cover;
+    background-size: cover;
     text-align: center;
+    color: var(--accent-2);
+    border-radius: 1cap;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border: 1px solid black;
+}
+
+.hero h2, h3 {
+    text-shadow: 4px 4px 4px #000000;
 }
 
 .about {
@@ -27,17 +37,48 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 1vw;
+    align-items: stretch;
 }
 
+@media (max-width: 767px) {
+    
+    .about .card {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .about .card .image {
+        order: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about .card .text {
+        order: 1;
+        width: 100%;
+    }
+}
 
 @media (min-width: 768px) {
     h1 {
         font-size: 300%;
     }
 
+    .about .card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about .card .text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
-
+    h1 {
+        font-size: 400%;
+    }
 }
