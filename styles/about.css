@@ -11,6 +11,26 @@ h2 {
     text-align: center;
 }
 
+.hero {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&);
+    background-position: cover;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about .card {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+
+
 @media (min-width: 768px) {
     h1 {
         font-size: 300%;
