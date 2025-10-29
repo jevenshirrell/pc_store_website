@@ -13,22 +13,60 @@ h2 {
     text-align: center;
 }
 
+/* edits the sizes of the image card */
+
+.card .image, .card img, .hero img {
+    width: 80%;
+}
+
+.card img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* mission statement ("OUR MISSION") */
+
+.missionStatement {
+    text-align: center;
+}
+
+.missionStatement .image {
+    width: 200%;
+}
+
+.missionStatement img {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.missionStatement .text h3, .missionStatement .text p {
+    margin: 0;
+}
+
 /* hero section */
 .hero {
     background-image: url(https://assemblecomputeronline.wordpress.com/wp-content/uploads/2018/09/best-computer-store.jpg?w=880&h=312&crop=1);
     background-position: cover;
     background-size: cover;
     text-align: center;
-    color: var(--accent-2);
+    color: white;
     border-radius: 1cap;
     padding: 2vw;
     margin-bottom: 2vw;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* hero setipn's text, adds the drop shadow */
-.hero h2, h3 {
-    text-shadow: 4px 4px 4px #000000;
+.hero h2, .hero p, .hero h3 {
+    background: var(--bg);
+    margin: 0;
+    text-shadow: 0px 4px 0px #000000;
 }
 
 /* about section */
@@ -44,6 +82,8 @@ h2 {
     flex-direction: row;
     gap: 1vw;
     align-items: stretch;
+    font-size: 135%;
+    text-align: center;
 }
 
 /* mobile */
