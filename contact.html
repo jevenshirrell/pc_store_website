@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="shortcut icon" href="./images/jnj_logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -30,28 +31,26 @@
         <h1>Contact Us</h1>
     </div>
     <!-- The user selects the purpose of the contact -->
-    <div class="purpose">
-        <div class="panel">
-            <div class="text">
-                <h3>What do you wish to contact us about?</h3>
-            </div>
-            <!-- These will change the website underneath for slightly different forms to fill out -->
-            <div class="choice">
-                <select name="reason" onchange="status(this)">
-                <option value="default"></option>
-                <option value="trouble-shoot">Trouble-shooting</option>
-                <option value="review">Review</option>
-                <option value="suggestions">Suggestion</option>
-                <option value="questions">Question</option>
-                <option value="refunds">Refunds</option>
-                <option value="other">Other</option>
-                </select>
-            </div>
+    <div class="panel content">
+        <div class="text">
+            <h2>What do you wish to contact us about?</h2>
+        </div>
+        <!-- These will change the website underneath for slightly different forms to fill out -->
+        <div class="choice">
+            <select name="reason" onchange="status(this)">
+            <option value="default"></option>
+            <option value="trouble-shoot">Trouble-shooting</option>
+            <option value="review">Review</option>
+            <option value="suggestions">Suggestion</option>
+            <option value="questions">Question</option>
+            <option value="refunds">Refunds</option>
+            <option value="other">Other</option>
+            </select>
         </div>
     </div>
     <!-- REVIEW -->
     <div class="review hidden" id="review">
-        <div class="panel">
+        <div class="panel content">
             <div class="title">
                 <h2>Review</h2>
             </div>
@@ -96,7 +95,7 @@
     </div>
     <!-- TROUBLE-SHOOT -->
     <div class="trouble-shoot hidden" id="trouble-shoot">
-        <div class="panel">
+        <div class="panel  content">
             <div class="title">
                 <h2>Trouble-shooting</h2>
             </div>
@@ -126,7 +125,7 @@
     </div>
     <!-- QUESTIONS -->
     <div class="questions hidden" id="questions">
-        <div class="panel">
+        <div class="panel  content">
             <div class="title">
                 <h2>Questions</h2>
             </div>
@@ -146,7 +145,7 @@
     </div>
     <!-- SUGGESTIONS -->
     <div class="suggestions hidden" id="suggestions">
-        <div class="panel">
+        <div class="panel  content">
             <div class="title">
                 <h2>Suggestions</h2>
             </div>
@@ -172,7 +171,7 @@
     </div>
     <!-- OTHER -->
     <div class="other hidden" id="other">
-        <div class="panel">
+        <div class="panel  content">
             <div class="title">
                 <h2>Other</h2>
             </div>
@@ -192,7 +191,7 @@
     </div>
     <!-- REFUNDS -->
     <div class="refunds hidden" id="refunds">
-        <div class="panel">
+        <div class="panel  content">
             <div class="title">
                 <h2>Refunds</h2>
             </div>
@@ -210,32 +209,37 @@
             </div>
         </div>
     </div>
-    <div class="panel">
+    <div class="panel  content">
         <h2>Come Visit Our Location:</h2>
-    </div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1347.0664354293056!2d-112.05970930121039!3d33.4320059096453!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1761677052565!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d149779.9876905578!2d-112.08909588987555!3d33.49806746100773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0d005517f857%3A0xf13edea60048fc2!2sMicro%20Center!5e0!3m2!1sen!2sus!4v1761779363727!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
     </div>
     <div class="email">
-        <div class="panel">
+        <div class="panel content">
             <h2>Email Us:</h2>
-            <a href="mailto:pcs@jnj.com" class="socialLink">
-                <img src="./images/social logos/mail.svg" alt="Email icon" class="logo">
-            </a>
+            <div class="icons">
+                <a href="mailto:pcs@jnj.com" class="socialLink">
+                    <img src="./images/social logos/mail.svg" alt="Email icon" class="logo">
+                </a>
+            </div>
         </div>
     </div>
     <div class="social">
-        <div class="panel">
+        <div class="panel content">
             <h2>Or follow us on social media:</h2>
-            <a href="https://www.facebook.com" class="socialLink">
-                <img src="./images/social logos/facebook.svg" alt="Facebook icon" class="logo">
-            </a>
-            <a href="https://www.instagram.com" class="socialLink">
-                <img src="./images/social logos/instagram.svg" alt="Instagram icon" class="logo">
-            </a>
-            <a href="https://www.twitter.com" class="socialLink">
-                <img src="./images/social logos/twitter.svg" alt="Twitter icon" class="logo">
-            </a></div>
+            <div class="icons">
+                    <a href="https://www.facebook.com" class="socialLink">
+                        <img src="./images/social logos/facebook.svg" alt="Facebook icon" class="logo">
+                    </a>
+                    <a href="https://www.instagram.com" class="socialLink">
+                        <img src="./images/social logos/instagram.svg" alt="Instagram icon" class="logo">
+                    </a>
+                    <a href="https://www.twitter.com" class="socialLink">
+                        <img src="./images/social logos/twitter.svg" alt="Twitter icon" class="logo">
+                    </a>
+            </div>
+        </div>
         </div>
     </div>
     <footer class="panel">
