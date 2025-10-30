@@ -46,7 +46,6 @@ h2 {
 /* overrides the set image height to created the effect that the mission statement image has */
 #missionImage {
     object-fit: none;
-    width: 100%;
     height: 125vh;
 }
 
@@ -159,11 +158,19 @@ h2 {
         align-items: center;
         height: 100%;
     }
+
+    #missionImage {
+        width: 100%;
+    }
 }
 
 /* very large screens */
 @media (min-width: 1200px) {
     h1 {
         font-size: 400%;
+    }
+    
+    #missionImage {
+        width: 100%;
     }
 }
