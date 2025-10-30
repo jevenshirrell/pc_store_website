@@ -5,6 +5,7 @@ h1 {
     text-align: center;
     font-family: Title;
     color: var(--accent);
+    font-size: 3rem;
 }
 
 /* subheadings */
@@ -17,7 +18,7 @@ h2 {
 
 .card .image, .card img, .hero img {
     width: 250px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .card img {
@@ -29,14 +30,9 @@ h2 {
 
 .missionStatement {
     text-align: center;
-    object-fit: cover;
-}
-
-.missionStatement .image {
-    width: 200%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .missionStatement .text h3, .missionStatement .text p {
@@ -44,9 +40,18 @@ h2 {
 }
 
 /* overrides the set image height to created the effect that the mission statement image has */
+.missionStatement .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
 #missionImage {
-    object-fit: none;
-    height: 125vh;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .text {
@@ -64,7 +69,7 @@ h2 {
     text-align: center;
     padding: 2vw;
     margin-bottom: 2vw;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 /* hero setipn's text, adds the drop shadow */
@@ -80,11 +85,11 @@ h2 {
 }
 
 .hero h2 {
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px 3px 0 0;
 } 
 
 .hero h3 {
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 3px 3px;
 }
 
 /* about section */
@@ -109,39 +114,13 @@ h2 {
         align-items: center;
 }
 
-/* mobile */
-@media (min-width: 480px) and (max-width: 767px) {
-    
-    h1 {
-        font-size: 400%;
-    }
-
-    h2 {
-        font-size: 200%;
-    }
-
-    h3 {
-        font-size: 125%;
-    }
-
-    .card img {
-        width: 50%;
-    }
-
-    .about .card {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about .card .image {
-        order: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .about .card .text {
-        order: 1;
-        width: 100%;
-    }
+/* Member cards */
+.member .image{
+    order: 1;
+    height: 100%;
+}
+.member .text{
+    order: 2;
 }
 
 /* desktop */
@@ -149,21 +128,32 @@ h2 {
     h1 {
         font-size: 300%;
     }
-    .about .card {
-        flex-direction: row;
-        align-items: center;
-    }
     .about .card .text {
         display: flex;
         align-items: center;
         height: 100%;
     }
-
-    #missionImage {
-        width: 100%;
+}
+@media (min-width: 1000px){
+    .about .card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .missionStatement .image{
+        width: 200%;
+        height: auto;
+        align-self: stretch;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3, p{
+        font-size: x-large;
+    }
+    #nyakeh .image{
+        order: 3;
     }
 }
-
 /* very large screens */
 @media (min-width: 1200px) {
     h1 {
