@@ -1,1 +1,166 @@
 @import url(./global.css);
+
+/* main heading */
+h1 {
+    text-align: center;
+    font-family: Title;
+    color: var(--accent);
+    font-size: 3rem;
+}
+
+/* subheadings */
+h2 {
+    font-family: Header;
+    text-align: center;
+}
+
+/* edits the sizes of the image cards */
+
+.card .image, .card img, .hero img {
+    width: 250px;
+    border-radius: 3px;
+}
+
+.card img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* mission statement ("OUR MISSION") */
+
+.missionStatement {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.missionStatement .text h3, .missionStatement .text p {
+    margin: 0;
+}
+
+/* overrides the set image height to created the effect that the mission statement image has */
+.missionStatement .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#missionImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url(https://assemblecomputeronline.wordpress.com/wp-content/uploads/2018/09/best-computer-store.jpg?w=880&h=312&crop=1);
+    background-position: cover;
+    background-size: cover;
+    text-align: center;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 3px;
+}
+
+/* hero setipn's text, adds the drop shadow */
+.hero h2, .hero p, .hero h3 {
+    background: var(--bg);
+    margin: 0;
+    padding: 15px;
+}
+
+.card h2, .card p, .card h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+.hero h2 {
+    border-radius: 3px 3px 0 0;
+} 
+
+.hero h3 {
+    border-radius: 0 0 3px 3px;
+}
+
+/* about section */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* each card in about section */
+.about .card {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: stretch;
+    font-size: 135%;
+    text-align: center;
+}
+
+.about .card {
+        flex-direction: column;
+        align-items: center;
+}
+
+/* Member cards */
+.member .image{
+    order: 1;
+    height: 100%;
+}
+.member .text{
+    order: 2;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 300%;
+    }
+    .about .card .text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+@media (min-width: 1000px){
+    .about .card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .missionStatement .image{
+        width: 200%;
+        height: auto;
+        align-self: stretch;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3, p{
+        font-size: x-large;
+    }
+    #nyakeh .image{
+        order: 3;
+    }
+}
+/* very large screens */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 400%;
+    }
+    
+    #missionImage {
+        width: 100%;
+    }
+}
