@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="shortcut icon" href="./images/jnj_logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="panel">
+            <a href="./index.html"><img class="logo" src="./images/jnj_logo.png" alt="JNJ PCs Logo"></a>
+            <details class="mobileOnly">
+                <summary><span class="hamburger"></span></summary>
+                <ul class="menu card">
+                    <li><a href="./about.html" class="navLink">About</a></li>
+                    <li><a href="./products.html" class="navLink">Products</a></li>
+                    <li><a href="./contact.html" class="navLink">Contact</a></li>
+                    <li><a href="./faq.html" class="navLink">FAQs</a></li>
+                </ul>
+            </details>
+            <a href="./about.html" class="desktopOnly navLink" id="nav1">About</a>
+            <a href="./products.html" class="desktopOnly navLink" id="nav2">Products</a>
+            <a href="./contact.html" class="desktopOnly navLink" id="nav3">Contact</a>
+            <a href="faq.html" class="desktopOnly navLink" id="nav4">FAQs</a>
+        </nav>
+    </header>
+    <!-- "Hero" section with image in the back -->
+    <div class="hero panel">
+        <h1>Contact Us</h1>
+    </div>
+    <!-- The user selects the purpose of the contact -->
+    <div class="panel content">
+        <div class="text">
+            <h2>What do you wish to contact us about?</h2>
+        </div>
+        <!-- These will change the website underneath for slightly different forms to fill out -->
+        <div class="choice">
+            <select name="reason" onchange="status(this)">
+            <option value="default"></option>
+            <option value="trouble-shoot">Trouble-shooting</option>
+            <option value="review">Review</option>
+            <option value="suggestions">Suggestion</option>
+            <option value="questions">Question</option>
+            <option value="refunds">Refunds</option>
+            <option value="other">Other</option>
+            </select>
+        </div>
+    </div>
+    <!-- REVIEW -->
+    <div class="review hidden" id="review">
+        <div class="panel content">
+            <div class="title">
+                <h2>Review</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Product:</p>
+                <select name="product" id="product">
+                <option value="default"></option>
+                <option value="game">Gaming PC</option>
+                <option value="create">Creator PC</option>
+                <option value="office">Office PC</option>
+                <option value="custom">Custom Build</option>
+                <option value="other">Other</option>
+                </select>
+
+                <p>Your Review:</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 stars">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star">★</label>
+                </div>
+
+                <p>A brief reason for your rating:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- TROUBLE-SHOOT -->
+    <div class="trouble-shoot hidden" id="trouble-shoot">
+        <div class="panel  content">
+            <div class="title">
+                <h2>Trouble-shooting</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>Product:</p>
+                <select name="product" id="product">
+                <option value="default"></option>
+                <option value="game">Gaming PC</option>
+                <option value="create">Creator PC</option>
+                <option value="office">Office PC</option>
+                <option value="custom">Custom Build</option>
+                <option value="other">Other</option>
+                </select>
+
+                <p>Tell us what's wrong:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- QUESTIONS -->
+    <div class="questions hidden" id="questions">
+        <div class="panel  content">
+            <div class="title">
+                <h2>Questions</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>What would you like to know?</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- SUGGESTIONS -->
+    <div class="suggestions hidden" id="suggestions">
+        <div class="panel  content">
+            <div class="title">
+                <h2>Suggestions</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>The suggestion relates to:</p>
+                <select name="sug" id="sug">
+                <option value="default"></option>
+                <option value="service">Service Offerings</option>
+                <option value="experience">Customer Experience / Website Features</option>
+                <option value="business">Business Suggestions</option>
+                <option value="marketing">Marketing & Branding Ideas</option>
+                </select>
+
+                <p>Your Suggestion:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- OTHER -->
+    <div class="other hidden" id="other">
+        <div class="panel  content">
+            <div class="title">
+                <h2>Other</h2>
+            </div>
+            <div class="form">
+                <p>Name:</p>
+                <input type="text">
+
+                <p>Email:</p>
+                <input type="email">
+
+                <p>What you would like to tell us:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- REFUNDS -->
+    <div class="refunds hidden" id="refunds">
+        <div class="panel  content">
+            <div class="title">
+                <h2>Refunds</h2>
+            </div>
+            <div class="form">
+                <p>Email:</p>
+                <input type="email">
+
+                <p>PC Serial #:</p>
+                <input type="text">
+
+                <p>Reason:</p>
+                <textarea name="tall" id="tall"></textarea>
+
+                <button onclick="location.reload()" class="button1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel  content">
+        <h2>Come Visit Our Location:</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d149779.9876905578!2d-112.08909588987555!3d33.49806746100773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0d005517f857%3A0xf13edea60048fc2!2sMicro%20Center!5e0!3m2!1sen!2sus!4v1761779363727!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+    <div class="email">
+        <div class="panel content">
+            <h2>Email Us:</h2>
+            <div class="icons">
+                <a href="mailto:pcs@jnj.com" class="socialLink">
+                    <img src="./images/social logos/mail.svg" alt="Email icon" class="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="panel content">
+            <h2>Or follow us on social media:</h2>
+            <div class="icons">
+                    <a href="https://www.facebook.com" class="socialLink">
+                        <img src="./images/social logos/facebook.svg" alt="Facebook icon" class="logo">
+                    </a>
+                    <a href="https://www.instagram.com" class="socialLink">
+                        <img src="./images/social logos/instagram.svg" alt="Instagram icon" class="logo">
+                    </a>
+                    <a href="https://www.twitter.com" class="socialLink">
+                        <img src="./images/social logos/twitter.svg" alt="Twitter icon" class="logo">
+                    </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="panel">
+        <a href="./index.html"><img class="logo" src="./images/jnj_logo.png" alt="JNJ PCs Logo"></a>
+        <div class="footerLinks">
+            <a href="./about.html" class="navLink" id="nav1">About</a>
+            <a href="./products.html" class="navLink" id="nav2">Products</a>
+            <a href="./contact.html" class="navLink" id="nav3">Contact</a>
+            <a href="faq.html" class="navLink" id="nav4">FAQs</a>
+        </div>
+        <div class="socials">
+            <a href="mailto:pcs@jnj.com" class="socialLink">
+                <img src="./images/social logos/mail.svg" alt="Email icon" class="logo">
+            </a>
+            <a href="https://www.facebook.com" class="socialLink">
+                <img src="./images/social logos/facebook.svg" alt="Facebook icon" class="logo">
+            </a>
+            <a href="https://www.instagram.com" class="socialLink">
+                <img src="./images/social logos/instagram.svg" alt="Instagram icon" class="logo">
+            </a>
+            <a href="https://www.twitter.com" class="socialLink">
+                <img src="./images/social logos/twitter.svg" alt="Twitter icon" class="logo">
+            </a></div>
+    </footer>
+</body>
+</html>
+<script>
+    function status(select){
+        if (select.value=='default'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='review'){
+            document.getElementById('review').style.display = "block";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='trouble-shoot'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "block";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='questions'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "block";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='suggestions'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "block";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='other'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "block";
+            document.getElementById('refunds').style.display = "none";
+        } else if (select.value=='refunds'){
+            document.getElementById('review').style.display = "none";
+            document.getElementById('trouble-shoot').style.display = "none";
+            document.getElementById('questions').style.display = "none";
+            document.getElementById('suggestions').style.display = "none";
+            document.getElementById('other').style.display = "none";
+            document.getElementById('refunds').style.display = "block";
+        }
+    }
+</script>

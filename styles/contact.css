@@ -1,1 +1,213 @@
 @import url(./global.css);
+/* general styles */
+h1, h2, h3, p{
+  margin: 0;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+h2{
+  font-family: Header;
+  text-align: center;
+}
+/* Image and Text at the top */
+.hero h1{
+    font-family: title;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* forms disappear when loaded in */
+.hidden{
+    display: none;
+}
+/* form sizing and styling */
+select, input, textarea, option{
+    background-color: var(--accent);
+    height: 2rem;
+    width: 20rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: text;
+    color: var(--bg);
+}
+select{
+  height: calc(2rem + 20px);
+}
+/* "Hero" css */
+.hero{
+    background-image: url(https://www.inpulseglobal.com/wp-content/uploads/2022/10/PC-Support.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    height: 10rem;
+    color: var(--panel);
+    font-size: x-large;
+}
+/* dropdown */
+select, option{
+  font-size: x-large;
+  text-align: center;
+}
+/* Adjusting form sizing */
+textarea{
+    height: 8rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.button1{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+/* Star System */
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  font-size: 4rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+/* When clicked (radio selected) */
+.star-rating input:checked ~ label {
+  color: gold;
+}
+/* map */
+.map{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+iframe{
+  border-radius: 5px;
+  width: 100%;
+}
+/* "Hero" css */
+.hero .text{
+    background-image: url(https://www.inpulseglobal.com/wp-content/uploads/2022/10/PC-Support.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    height: 10rem;
+    color: var(--accent);
+    font-size: x-large;
+}
+/* Adjusting form sizing */
+textarea{
+    height: 8rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+/* Star System */
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  font-size: 3rem;
+  color: var(--bg);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: var(--accent-2);
+}
+/* When clicked (radio selected) */
+.star-rating input:checked ~ label {
+  color: var(--accent-2);
+}
+.icons{
+  display: flex;
+  gap: 10px;
+}
+/* Media queries */
+/* Tablet */
+@media(min-width:768px){
+  select, input, textarea{
+    width: 30rem;
+  }
+  select, input, textarea, option{
+    font-size: 2rem;
+    width: 700px;
+  }
+  select, input{
+    height: calc(2rem + 20px);
+  }
+  textarea{
+    height: calc(2rem * 4 + 20px);
+  }
+  p{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .icons .logo{
+    height: 5rem;
+  }
+    .button1{
+      font-size: 3rem;
+    }
+    select, input, textarea, option{
+        font-size: 1.5rem;
+    }
+    .review .panel, .trouble-shoot .panel, .questions .panel, .suggestions .panel, .other .panel, .refunds .panel{
+        padding-left: 2rem;
+    }
+    .star-rating label {
+      font-size: 5rem;
+    }
+}
+/* Desktop */
+@media(min-width:1000px){
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+      font-size: 2.5rem;
+    }
+  }
+  /* Widescreen */
+  @media(min-width:1200px){
+    p{
+      font-size: 3rem;
+    }
+    h2{
+      font-size: 3rem;
+    }
+    .choice select, .choice option{
+      font-size: 3rem;
+    }
+    .choice select{
+      height: calc(3rem + 20px);
+    }
+  }
