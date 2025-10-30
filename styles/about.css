@@ -39,19 +39,15 @@ h2 {
     justify-content: center;
 }
 
-#mission {
-    display: flex;
-    justify-content: center;
-    
+.missionStatement .text h3, .missionStatement .text p {
+    margin: 0;
 }
 
+/* overrides the set image height to created the effect that the mission statement image has */
 #missionImage {
     object-fit: none;
     width: 100%;
     height: 125vh;
-}
-
-#mission .missionStatement .card {
 }
 
 .text {
@@ -60,9 +56,6 @@ h2 {
     gap: 1vh;
 }
 
-.missionStatement .text h3, .missionStatement .text p {
-    margin: 0;
-}
 
 /* hero section */
 .hero {
@@ -112,8 +105,13 @@ h2 {
     text-align: center;
 }
 
+.about .card {
+        flex-direction: column;
+        align-items: center;
+}
+
 /* mobile */
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
     
     h1 {
         font-size: 400%;
