@@ -13,10 +13,11 @@ h2 {
     text-align: center;
 }
 
-/* edits the sizes of the image card */
+/* edits the sizes of the image cards */
 
 .card .image, .card img, .hero img {
-    width: 80%;
+    width: 250px;
+    border-radius: 5px;
 }
 
 .card img {
@@ -28,14 +29,29 @@ h2 {
 
 .missionStatement {
     text-align: center;
+    object-fit: cover;
 }
 
 .missionStatement .image {
     width: 200%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.missionStatement img {
+#mission {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#missionImage {
+    object-fit: none;
     width: 100%;
+    height: 125vh;
+}
+
+#mission .missionStatement .card {
 }
 
 .text {
@@ -54,19 +70,29 @@ h2 {
     background-position: cover;
     background-size: cover;
     text-align: center;
-    color: white;
-    border-radius: 1cap;
     padding: 2vw;
     margin-bottom: 2vw;
-    border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* hero setipn's text, adds the drop shadow */
 .hero h2, .hero p, .hero h3 {
     background: var(--bg);
     margin: 0;
-    text-shadow: 0px 4px 0px #000000;
+    padding: 15px;
+}
+
+.card h2, .card p, .card h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+.hero h2 {
+    border-radius: 5px 5px 0 0;
+} 
+
+.hero h3 {
+    border-radius: 0 0 5px 5px;
 }
 
 /* about section */
@@ -88,6 +114,23 @@ h2 {
 
 /* mobile */
 @media (max-width: 767px) {
+    
+    h1 {
+        font-size: 400%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 125%;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
     .about .card {
         flex-direction: column;
         align-items: center;
